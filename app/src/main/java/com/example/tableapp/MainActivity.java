@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,13 +32,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                k="";
-                Integer var= Integer.parseInt(et.getText().toString());
-                for(i=1;i<=10;i++)
+                if(et.getText().toString().isEmpty())
                 {
-                    k=k+(var+" x " +i+ " = " +(var*i)+"\n\n");
+                    Toast.makeText(MainActivity.this, "Please Enter a Number", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    k = "";
+                    Integer var = Integer.parseInt(et.getText().toString());
+                    for (i = 1; i <= 10; i++) {
+                        k = k + (var + " x " + i + " = " + (var * i) + "\n\n");
 
-                    tv.setText(k);
+                        tv.setText(k);
+                    }
                 }
             }
         });
