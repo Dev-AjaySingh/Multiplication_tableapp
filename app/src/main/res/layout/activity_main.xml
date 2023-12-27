@@ -11,8 +11,8 @@
  <TextView
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:text="Table App"
-     android:textSize="50sp"
+     android:text="Multiplication Table App"
+     android:textSize="30sp"
      android:textStyle="bold"
      android:textColor="#FF5722"
      android:textAlignment="center"
