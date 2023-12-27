@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">tableapp</string>
+    <string name="myname">This is a simple Table App by Ajay</string>
 </resources>
